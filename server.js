@@ -18,21 +18,16 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// Export the server as a module for Vercel serverless functions
-module.exports = server;
-
 // Handle Vercel serverless function requests
 module.exports = (req, res) => {
   // Set CORS headers for API requests
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  
   // Handle OPTIONS method for preflight requests
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
-  
   // Forward the request to json-server
   return server(req, res);
 };

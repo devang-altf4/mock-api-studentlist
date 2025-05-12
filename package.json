@@ -5,9 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "json-server --watch db.json --port 5000"
+    "dev": "json-server --watch db.json --port 5000",
+    "vercel-build": "echo 'Build step completed'"
   },
   "dependencies": {
     "json-server": "^0.17.4"
+  },
+  "engines": {
+    "node": ">=14.x"
   }
 }

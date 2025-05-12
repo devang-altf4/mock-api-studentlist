@@ -10,8 +10,13 @@ server.use(middlewares);
 // Use the router with the mock data (db.json)
 server.use(router);
 
-// Start the server on the given port (use PORT from environment variables, fallback to 5000)
-const port = process.env.PORT || 5000;
-server.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
-});
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  const port = process.env.PORT || 5000;
+  server.listen(port, () => {
+    console.log(`JSON Server is running on port ${port}`);
+  });
+}
+
+// Export the server as a module for Vercel serverless functions
+module.exports = server;

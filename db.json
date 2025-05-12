@@ -1,8 +1,19 @@
 {
-    "students": [
-      { "id": 1, "name": "Alice", "age": 21, "course": "Computer Science" },
-      { "id": 2, "name": "Bob", "age": 22, "course": "Mathematics" },
-      { "id": 3, "name": "Charlie", "age": 23, "course": "Physics" }
-    ]
-  }
-  
+  "students": [
+    { "id": 1, "name": "Alice", "age": 21, "course": "Computer Science" },
+    { "id": 2, "name": "Bob", "age": 22, "course": "Mathematics" },
+    { "id": 3, "name": "Charlie", "age": 23, "course": "Physics" },
+    { "id": 4, "name": "David", "age": 20, "course": "Chemistry" },
+    { "id": 5, "name": "Ella", "age": 24, "course": "Biology" },
+    { "id": 6, "name": "Frank", "age": 25, "course": "Engineering" },
+    { "id": 7, "name": "Grace", "age": 21, "course": "Psychology" },
+    { "id": 8, "name": "Henry", "age": 22, "course": "Economics" },
+    { "id": 9, "name": "Ivy", "age": 23, "course": "Literature" },
+    { "id": 10, "name": "Jack", "age": 20, "course": "Philosophy" },
+    { "id": 11, "name": "Kate", "age": 24, "course": "Political Science" },
+    { "id": 12, "name": "Leo", "age": 25, "course": "History" },
+    { "id": 13, "name": "Mia", "age": 21, "course": "Art" },
+    { "id": 14, "name": "Nathan", "age": 22, "course": "Music" },
+    { "id": 15, "name": "Olivia", "age": 23, "course": "Journalism" }
+  ]
+}
